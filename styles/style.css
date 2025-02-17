@@ -1,7 +1,7 @@
 :root {
   --branding-color: #6c63ff;
   --secondary-color: rgb(21, 21, 21);
-  --heading-font-family: "Sirin Stencil", serif;
+  --heading-font-family: "Great Vibes", serif;
   --default-font-family: "Playfair Display", serif;
 }
 
@@ -79,15 +79,6 @@ p {
   font-size: 18px;
 }
 
-.btn-branding {
-  background: var(--branding-color);
-  border-radius: 4px;
-  color: black;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
-}
-
 .metallic-button {
   background: linear-gradient(
     45deg,
@@ -110,20 +101,11 @@ p {
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
   text-decoration: none;
   transition: all 0.2s ease-in-out;
+  border: 1px solid var(--branding-color);
 }
 
 .metallic-button:hover {
   transform: translateY(-2px);
-}
-
-.btn-branding-outline {
-  background: white;
-  border: 1px solid var(--branding-color);
-  border-radius: 4px;
-  color: black;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
 }
 
 .project-description {
