@@ -122,6 +122,10 @@ p {
   padding: 120px 60px;
 }
 
+.icons {
+  font-size: 50px;
+}
+
 @media (max-width: 960px) {
   h1 {
     font-size: 44px;
