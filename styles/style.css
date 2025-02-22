@@ -66,13 +66,23 @@ p {
   text-align: left;
 }
 
-.content-container h1 {
+.content h1 {
   font-size: 64px;
   line-height: 80px;
 }
 
-.content-container h2 {
+.content h2 {
   font-size: 20px;
+}
+
+.content h3 {
+  font-size: 26px;
+  line-height: 1.5;
+}
+
+.content p {
+  font-size: 14px;
+  margin: 0;
 }
 
 .content-container p {
@@ -128,8 +138,8 @@ p {
     text-align: center;
   }
 
-  .content-container {
-    padding: 25px;
+  .content {
+    padding: 0;
     text-align: center;
   }
 
