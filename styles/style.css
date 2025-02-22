@@ -57,25 +57,25 @@ p {
   line-height: 1.5;
 }
 
-.about-section {
+.content-container {
   padding: 160px 20px;
 }
 
-.about-section-content {
+.content {
   margin: 30px;
   text-align: left;
 }
 
-.about-section h1 {
+.content-container h1 {
   font-size: 64px;
   line-height: 80px;
 }
 
-.about-section h2 {
+.content-container h2 {
   font-size: 20px;
 }
 
-.about-section p {
+.content-container p {
   font-size: 18px;
 }
 
@@ -128,7 +128,7 @@ p {
     text-align: center;
   }
 
-  .about-section {
+  .content-container {
     padding: 25px;
     text-align: center;
   }
