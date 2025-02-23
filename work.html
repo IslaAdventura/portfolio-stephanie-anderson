@@ -30,7 +30,12 @@
     ></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | Stephanie Anderson</title>
+    <meta
+      name="description"
+      content="Stephanie is a professionally trained front-end engineer based in Ohio"
+    />
+
+    <title>Current projects | Stephanie Anderson</title>
   </head>
   <body>
     <nav
@@ -72,7 +77,8 @@
               <a
                 href="https://www.linkedin.com/in/stephanie-anderson-rn-bsn-4658b336/"
                 class="nav-link me-3"
-                target="blank"
+                title="LinkedIn"
+                target="_blank"
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
             </li>
@@ -81,7 +87,8 @@
               <a
                 href="https://github.com/IslaAdventura"
                 class="nav-link"
-                target="blank"
+                title="GitHub"
+                target="_blank"
               >
                 <i class="fa-brands fa-github"></i>
               </a>
@@ -96,12 +103,16 @@
           Take a look at what I've been working on!
         </h1>
 
+        <div class="text-center mb-5">
+          <a href="index.html" class="btn metallic-button">Back to homepage</a>
+        </div>
+
         <div class="row">
           <div class="col-md-6 mb-5">
             <img
               src="images/yogurt.png"
               class="img-fluid mb-3 rounded"
-              alt=""
+              alt="picture of yogurt"
             />
             <h3 class="text-center m-0">Yogurt Project</h3>
             <p class="text-center">Built with HTML and CSS</p>
@@ -111,7 +122,7 @@
             <img
               src="images/weather.png"
               class="img-fluid mb-3 rounded"
-              alt=""
+              alt="picture of weather app"
             />
             <h3 class="text-center m-0">Weather Project</h3>
             <p class="text-center">Built with HTML, CSS, and Java Script</p>
@@ -121,7 +132,7 @@
             <img
               src="images/dictionary.png"
               class="img-fluid mb-3 rounded"
-              alt=""
+              alt="picture of dictionary app"
             />
             <h3 class="text-center m-0">Dictionary App</h3>
             <p class="text-center">Built with HTML, CSS, and React</p>
@@ -131,42 +142,66 @@
             <img
               src="images/translation.png"
               class="img-fluid mb-3 rounded"
-              alt=""
+              alt=" picture of translation app"
             />
             <h3 class="text-center m-0">Translation App</h3>
             <p class="text-center">Built with HTML, CSS, and React</p>
           </div>
         </div>
       </div>
-      <footer>
+      <footer class="container mb-4">
         <div
-          class="contact-box d-flex justify-content-between mb-5 d-none d-md-flex"
+          class="contact-box d-flex justify-content-between d-none d-md-flex"
         >
           <div>
             <h4>Work Inquiry</h4>
             <p>Let's work together</p>
           </div>
           <div>
-            <a href="" class="btn metallic-button mt-2">Contact me</a>
+            <a href="contact.html" class="btn metallic-button mt-2"
+              >Contact me</a
+            >
           </div>
         </div>
         <div class="d-flex justify-content-center mb-5">
-          <a href="mailto:srglover1@yahoo.com" class="email-link">
+          <a href="mailto:srglover1@yahoo.com" title="Email" class="email-link">
             <i class="fa-regular fa-envelope"></i
           ></a>
           <div class="social-media d-flex justify-content-center">
-            <a href="https://github.com/IslaAdventura" target="blank">
+            <a
+              href="https://github.com/IslaAdventura"
+              title="GitHub"
+              target="_blank"
+            >
               <i class="fa-brands fa-github"></i>
             </a>
             <div class="social-media d-flex justify-content-center">
               <a
                 href="https://www.linkedin.com/in/stephanie-anderson-rn-bsn-4658b336/"
-                target="blank"
+                title="LinkedIn"
+                target="_blank"
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
             </div>
           </div>
         </div>
+        <p class="text-center mt-4 footer-message">
+          ✨ This website was coded by
+          <a href="https://github.com/IslaAdventura" target="_blank"
+            >Stephanie Anderson</a
+          >
+          , is on
+          <a
+            href="https://github.com/IslaAdventura/portfolio-stephanie-anderson"
+            target="_blank"
+            >GitHub</a
+          >
+          , and hosted by
+          <a href="https://stellar-dusk-a814e0.netlify.app/" target="_blank"
+            >Netlify</a
+          >
+          ✨
+        </p>
       </footer>
     </div>
   </body>

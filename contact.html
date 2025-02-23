@@ -30,7 +30,11 @@
     ></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | Stephanie Anderson</title>
+    <meta
+      name="description"
+      content="Stephanie is a professionally trained front-end engineer based in Ohio"
+    />
+    <title>Contact Stephanie | Stephanie Anderson</title>
   </head>
   <body>
     <nav
@@ -71,7 +75,8 @@
               <a
                 href="https://www.linkedin.com/in/stephanie-anderson-rn-bsn-4658b336/"
                 class="nav-link me-3 active"
-                target="blank"
+                title="LinkedIn"
+                target="_blank"
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
             </li>
@@ -80,7 +85,8 @@
               <a
                 href="https://github.com/IslaAdventura"
                 class="nav-link active"
-                target="blank"
+                title="GitHub"
+                target="_blank"
               >
                 <i class="fa-brands fa-github"></i>
               </a>
@@ -96,16 +102,21 @@
         <div class="row">
           <div class="col-md-4 mb-5">
             <h3>Email</h3>
-            <p class="text-decoration-none mb-5">
-              <a href="mailto:srglover1@yahoo.com">srglover1@yahoo.com</a>
+            <p class="mb-3"> 
+              <div class="contact-page-email">
+              <a href="mailto:srglover1@yahoo.com" title="Email"
+                >srglover1@yahoo.com</a
+              >
+              </div>
             </p>
           </div>
 
-          <div class="col-md-4 mb-5">
+          <div class="col-md-4 mb-5 contact-page-social-media">
             <h3>LinkedIn</h3>
             <p class="mb-5">
               <a
                 href="https://www.linkedin.com/in/stephanie-anderson-rn-bsn-4658b336/"
+                title="LinkedIn"
                 target="_blank"
                 class="icons"
               >
@@ -114,11 +125,12 @@
             </p>
           </div>
 
-          <div class="col-md-4 mb-5">
-            <h3>Github</h3>
+          <div class="col-md-4 mb-5 contact-page-social-media">
+            <h3>GitHub</h3>
             <p class="mb-5">
               <a
                 href="https://github.com/IslaAdventura"
+                title="GitHub"
                 target="_blank"
                 class="icons"
               >
@@ -128,6 +140,24 @@
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      <footer class="container mb-4">
+         <p class="text-center footer-message">
+          ✨ This website was coded by
+          <a href="https://github.com/IslaAdventura" target="_blank"
+            >Stephanie Anderson</a
+          >
+          , is on
+          <a
+            href="https://github.com/IslaAdventura/portfolio-stephanie-anderson"
+            target="_blank"
+            >GitHub</a
+          >
+          , and hosted by
+          <a href="https://stellar-dusk-a814e0.netlify.app/" target="_blank"
+            >Netlify</a
+          > ✨
+        </p>
+      </footer>
   </body>
 </html>

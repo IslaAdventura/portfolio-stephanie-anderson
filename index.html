@@ -30,7 +30,12 @@
     ></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Project | Stephanie Anderson</title>
+
+    <meta
+      name="description"
+      content="Stephanie is a professionally trained front-end engineer based in Ohio"
+    />
+    <title>Front-end developer | Stephanie Anderson</title>
   </head>
   <body>
     <nav
@@ -38,7 +43,9 @@
       data-bs-theme="dark"
     >
       <div class="container-fluid">
-        <a class="navbar-brand me-5" href="index.html">Stephanie Anderson</a>
+        <a class="navbar-brand me-5" href="index.html" title="Homepage"
+          >Stephanie Anderson</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -57,23 +64,40 @@
                 class="nav-link active me-3"
                 aria-current="page"
                 href="index.html"
+                title="Homepage"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link me-3" href="about.html">About me</a>
+              <a
+                class="nav-link me-3"
+                href="about.html"
+                title="A little info about me"
+                >About me</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link me-3" href="work.html">Current projects</a>
+              <a
+                class="nav-link me-3"
+                href="work.html"
+                title="What I am working on"
+                >Current projects</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link me-3" href="contact.html">Contact me</a>
+              <a
+                class="nav-link me-3"
+                href="contact.html"
+                title="My contact information"
+                >Contact me</a
+              >
             </li>
             <li class="nav-item">
               <a
                 href="https://www.linkedin.com/in/stephanie-anderson-rn-bsn-4658b336/"
                 class="nav-link me-3"
-                target="blank"
+                title="LinkedIn"
+                target="_blank"
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
             </li>
@@ -82,7 +106,8 @@
               <a
                 href="https://github.com/IslaAdventura"
                 class="nav-link"
-                target="blank"
+                title="GitHub"
+                target="_blank"
               >
                 <i class="fa-brands fa-github"></i>
               </a>
@@ -96,9 +121,9 @@
       <p>Hello! I am</p>
       <h1>Stephanie Anderson</h1>
       <h2 class="mb-5">Front-end developer based in the United States</h2>
-      <div><a href="#" class="metallic-button">Contact me</a></div>
+      <div><a href="contact.html" class="metallic-button">Contact me</a></div>
     </div>
-    <p class="text-centered m-5">Featured projects to illustrating my work:</p>
+    <p class="text-centered m-5">Featured projects to illustrate my work:</p>
     <div class="container">
       <div class="row mb-5">
         <div class="col d-none d-lg-block">
@@ -118,7 +143,7 @@
               large language ocean. A small river named Duden flows by
             </p>
             <div>
-              <a href="#" class="metallic-button"> Learn more </a>
+              <a href="work.html" class="metallic-button"> Learn more </a>
             </div>
           </div>
         </div>
@@ -135,7 +160,7 @@
               large language ocean. A small river named Duden flows by
             </p>
             <div>
-              <a href="#" class="metallic-button"> Learn more </a>
+              <a href="work.html" class="metallic-button"> Learn more </a>
             </div>
           </div>
         </div>
@@ -167,13 +192,13 @@
               large language ocean. A small river named Duden flows by
             </p>
             <div>
-              <a href="#" class="metallic-button"> Learn more </a>
+              <a href="work.html" class="metallic-button"> Learn more </a>
             </div>
           </div>
         </div>
       </div>
 
-      <footer>
+      <footer class="container mb-4">
         <div
           class="contact-box d-flex justify-content-between mb-5 d-none d-md-flex"
         >
@@ -182,26 +207,55 @@
             <p>Let's work together</p>
           </div>
           <div>
-            <a href="" class="btn metallic-button mt-2">Contact me</a>
+            <a href="contact.html" class="btn metallic-button mt-2"
+              >Contact me</a
+            >
           </div>
         </div>
         <div class="d-flex justify-content-center mb-5">
-          <a href="mailto:srglover1@yahoo.com" class="email-link">
+          <a
+            href="mailto:srglover1@yahoo.com"
+            title="Email"
+            target="_blank"
+            class="email-link"
+          >
             <i class="fa-regular fa-envelope"></i
           ></a>
           <div class="social-media d-flex justify-content-center">
-            <a href="https://github.com/IslaAdventura" target="blank">
+            <a
+              href="https://github.com/IslaAdventura"
+              title="GitHub"
+              target="_blank"
+            >
               <i class="fa-brands fa-github"></i>
             </a>
             <div class="social-media d-flex justify-content-center">
               <a
                 href="https://www.linkedin.com/in/stephanie-anderson-rn-bsn-4658b336/"
-                target="blank"
+                title="LinkedIn"
+                target="_blank"
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
             </div>
           </div>
         </div>
+        <p class="text-center mt-4 footer-message">
+          ✨ This website was coded by
+          <a href="https://github.com/IslaAdventura" target="_blank"
+            >Stephanie Anderson</a
+          >
+          , is on
+          <a
+            href="https://github.com/IslaAdventura/portfolio-stephanie-anderson"
+            target="_blank"
+            >GitHub</a
+          >
+          , and hosted by
+          <a href="https://stellar-dusk-a814e0.netlify.app/" target="_blank"
+            >Netlify</a
+          >
+          ✨
+        </p>
       </footer>
     </div>
   </body>
