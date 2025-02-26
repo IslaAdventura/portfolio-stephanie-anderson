@@ -118,6 +118,7 @@ p {
   color: white;
   font-size: 28px;
   text-decoration: none;
+  text-shadow: 0.05em 0.05em 0.05em var(--branding-color);
 }
 
 .contact-page-email a:hover {
