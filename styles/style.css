@@ -171,6 +171,12 @@ p {
   transform: translateY(-2px);
 }
 
+.profile-image {
+  border: none;
+  border-radius: 25%;
+  width: 80%;
+}
+
 .project-description {
   padding: 120px 60px;
 }
