@@ -21,7 +21,7 @@
 }
 
 .nav-item {
-  font-size: 22px;
+  font-size: 28px;
   padding: 0 20px;
 }
 
@@ -87,7 +87,6 @@ p {
 .hero p {
   font-family: var(--heading-font-family);
   font-size: 34px;
-
   margin: 0;
 }
 
@@ -97,7 +96,7 @@ p {
 }
 
 .title-line {
-  font-size: 35px;
+  font-size: 46px;
   text-shadow: 0.03em 0.03em 0.03em var(--branding-color);
 }
 
@@ -123,16 +122,6 @@ p {
   font-family: var(--heading-font-family);
   font-size: 26px;
   padding: 10px;
-}
-
-.skill img {
-  aspect-ratio: 1/1;
-  height: 110px;
-  width: 110px;
-}
-
-.skill-text {
-  font-size: 26px;
 }
 
 .content h3 {
@@ -207,13 +196,44 @@ p {
 }
 
 .img-fluid {
-  border: 5px rgb(241, 6, 6);
+  border: 5px black;
   border-radius: 10px;
   width: 100%;
-  max-width: 1280px;
-  height: 720px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.skill .img-fluid {
+  aspect-ratio: 1/1;
+  height: 110px;
+  width: 110px;
   object-fit: contain;
-  object-position: center;
+}
+
+.skill-text {
+  font-size: 24px;
+}
+
+.project-row {
+  min-height: 400px;
+}
+
+.project-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.project-text {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.project-description {
+  text-align: left;
 }
 
 footer .contact-box {
@@ -283,18 +303,31 @@ footer .social-media a:hover {
   font-size: 50px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 900px) {
+  .hero p {
+    display: none;
+  }
+
   h1 {
-    font-size: 44px;
+    font-family: var(--heading-font-family);
+    font-size: 50px;
     line-height: 2;
   }
 
-  h2 {
-    font-size: 44px;
+  .project-description h2 {
+    font-size: 30px;
+  }
+
+  .title-line {
+    font-size: 30px;
   }
 
   h4 {
-    font-size: 24px;
+    font-size: 25px;
+  }
+
+  .project-description p {
+    font-size: 20px;
   }
 
   .content {
@@ -309,5 +342,27 @@ footer .social-media a:hover {
 
   footer .contact-box {
     padding: 30px;
+  }
+  .project-row {
+    min-height: auto;
+  }
+
+  .skill .skill-text {
+    font-size: 20px;
+  }
+
+  .skill .img-fluid {
+    aspect-ratio: 1/1;
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+  }
+
+  .footer-message {
+    font-size: 16px;
+  }
+
+  .footer-message a {
+    font-size: 16px;
   }
 }
