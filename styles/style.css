@@ -192,6 +192,7 @@ p {
 }
 
 .metallic-button:hover {
+  color: black;
   text-decoration: underline;
 }
 
