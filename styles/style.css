@@ -49,7 +49,6 @@ h1 {
   font-size: 125px;
   font-style: italic;
   font-weight: bold;
-
   text-shadow: 0.03em 0.03em 0.03em var(--branding-color);
 }
 
@@ -303,7 +302,10 @@ footer .social-media a:hover {
   font-size: 50px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
+  .hero {
+    padding: 30px 20px;
+  }
   .hero p {
     display: none;
   }
@@ -311,7 +313,12 @@ footer .social-media a:hover {
   h1 {
     font-family: var(--heading-font-family);
     font-size: 50px;
-    line-height: 2;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: normal;
+    padding: 10px 10px;
   }
 
   .project-description h2 {
@@ -340,9 +347,6 @@ footer .social-media a:hover {
     text-align: center;
   }
 
-  footer .contact-box {
-    padding: 30px;
-  }
   .project-row {
     min-height: auto;
   }
@@ -358,11 +362,20 @@ footer .social-media a:hover {
     object-fit: contain;
   }
 
+  .contact-page-email a {
+    font-size: 20px;
+    margin-left: -20px;
+  }
+
+  footer .contact-box {
+    padding: 30px;
+  }
+
   .footer-message {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .footer-message a {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
