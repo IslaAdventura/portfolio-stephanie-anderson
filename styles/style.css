@@ -78,6 +78,7 @@ p {
 .hero h1 {
   color: transparent;
   background: linear-gradient(90deg, #6c63ff, white);
+  background-clip: text;
   -webkit-background-clip: text;
   display: inline-block;
   font-family: var(--default-font-family);
