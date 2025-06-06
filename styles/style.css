@@ -1,13 +1,13 @@
 :root {
   --branding-color: #6c63ff;
-  --secondary-color: rgb(21, 21, 21);
+  --secondary-color: #fff;
   --heading-font-family: "Noto Serif", serif;
   --default-font-family: "Smythe", system-ui;
 }
 
 .navbar-brand {
   color: var(--branding-color) !important;
-  font-size: 26px;
+  font-size: 32px;
   text-shadow: 0.05em 0.05em 0.05em black !important;
 }
 
@@ -26,8 +26,8 @@
 }
 
 body {
-  background: black;
-  color: white;
+  background: var(--secondary-color);
+  color: black;
   font-family: var(--heading-font-family);
   text-align: center;
 }
@@ -43,19 +43,9 @@ h5 {
 }
 
 h1 {
-  color: white;
-  font-family: var(--default-font-family);
+  color: black;
   font-weight: bold;
-  font-size: 125px;
-  font-style: italic;
-  font-weight: bold;
-  text-shadow: 0.03em 0.03em 0.03em var(--branding-color);
-}
-
-h2 {
-  font-size: 44px;
-  font-weight: bold;
-  margin: 0;
+  font-size: 84px;
 }
 
 h4 {
@@ -73,11 +63,8 @@ p {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
-    url("../images/background-image3.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: black;
+  color: white;
   padding: 80px 20px;
   text-align: center;
 }
@@ -88,13 +75,24 @@ p {
   margin: 0;
 }
 
+.hero h1 {
+  color: transparent;
+  background: linear-gradient(90deg, #6c63ff, white);
+  -webkit-background-clip: text;
+  display: inline-block;
+  font-family: var(--default-font-family);
+  font-weight: bold;
+  font-size: 155px;
+}
+
 .hero h2 {
   font-size: 30px;
-  line-height: 1;
+  font-weight: normal;
+  line-height: 1.5;
 }
 
 .title-line {
-  font-size: 46px;
+  font-size: 52px;
   text-shadow: 0.03em 0.03em 0.03em var(--branding-color);
 }
 
@@ -134,6 +132,18 @@ p {
 
 .content-container p {
   font-size: 18px;
+}
+
+.contact-page-content-container {
+  background: black;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 250px;
+  text-shadow: 0.2em 0.2em 0.2em var(--branding-color);
+}
+
+.contact-page-content-container h3 {
+  font-size: 53px;
 }
 
 .contact-page-email a {
@@ -235,6 +245,12 @@ p {
   text-align: left;
 }
 
+footer {
+  color: black;
+  margin: 0;
+  padding: 30px 0;
+}
+
 footer .contact-box {
   background-color: var(--secondary-color);
   border-radius: 10px;
@@ -242,8 +258,10 @@ footer .contact-box {
   padding: 30px 120px;
 }
 
-footer .contact-box p {
+footer .contact-box p,
+h4 {
   margin: 0;
+  text-shadow: 0.03em 0.03em 0.03em var(--branding-color);
 }
 
 footer .email-link {
@@ -286,7 +304,7 @@ footer .social-media a:hover {
 }
 
 .footer-message a {
-  color: white;
+  color: black;
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
@@ -311,11 +329,16 @@ footer .social-media a:hover {
   }
 
   h1 {
+    color: white;
     font-family: var(--heading-font-family);
-    font-size: 50px;
+    font-size: 40px;
   }
 
-  h2 {
+  .hero h1 {
+    font-size: 75px;
+  }
+
+  .hero h2 {
     font-size: 20px;
     font-weight: normal;
     padding: 10px 10px;
@@ -333,6 +356,11 @@ footer .social-media a:hover {
     font-size: 25px;
   }
 
+  .project-image {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
   .project-description p {
     font-size: 20px;
   }
@@ -340,6 +368,10 @@ footer .social-media a:hover {
   .content {
     padding: 0;
     text-align: center;
+  }
+
+  .content h1 {
+    font-size: 40px;
   }
 
   .project-description {
@@ -351,8 +383,17 @@ footer .social-media a:hover {
     min-height: auto;
   }
 
+  .metallic-button {
+    font-size: 18px;
+    padding: 10px 10px;
+  }
+
+  .skill-h1 {
+    color: black;
+  }
+
   .skill .skill-text {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .skill .img-fluid {
@@ -367,15 +408,20 @@ footer .social-media a:hover {
     margin-left: -20px;
   }
 
-  footer .contact-box {
-    padding: 30px;
+  .contact-page-content-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact-page-content-container h3 {
+    font-size: 30px;
   }
 
   .footer-message {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .footer-message a {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
