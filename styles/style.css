@@ -7,7 +7,7 @@
 
 .navbar-brand {
   color: var(--branding-color) !important;
-  font-size: 32px;
+  font-size: 22px;
   text-shadow: 0.05em 0.05em 0.05em black !important;
 }
 
@@ -21,8 +21,8 @@
 }
 
 .nav-item {
-  font-size: 28px;
-  padding: 0 20px;
+  font-size: 22px;
+  padding: 0 18px;
 }
 
 body {
@@ -321,6 +321,228 @@ footer .social-media a:hover {
   font-size: 50px;
 }
 
+.resume-container * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.resume-container {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  color: black;
+  width: 90%;
+  max-width: none;
+  margin: 0 auto;
+  padding: 5px;
+  background: white;
+}
+
+.resume-header {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.resume-name {
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+}
+
+.resume-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.resume-contact-info {
+  font-size: 12px;
+  color: black;
+  line-height: 1.6;
+}
+
+.resume-contact-info span {
+  margin: 0 10px;
+}
+
+.resume-link {
+  color: black;
+  text-decoration: none;
+}
+
+.resume-link:hover {
+  text-decoration: underline;
+}
+
+.resume-section {
+  margin-bottom: 25px;
+}
+
+.resume-section-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #bdc3c7;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.resume-job {
+  margin-bottom: 20px;
+}
+
+.resume-job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+
+.resume-job-title {
+  font-weight: bold;
+  font-size: 14px;
+  color: #2c3e50;
+}
+
+.resume-job-date {
+  font-size: 12px;
+  color: #636464;
+  font-style: italic;
+}
+
+.resume-company {
+  font-size: 13px;
+  color: #636464;
+  margin-bottom: 8px;
+}
+
+.resume-job-description {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-left: 0;
+}
+
+.resume-job-description li {
+  margin-bottom: 3px;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.resume-education-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.resume-degree {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.resume-school {
+  color: #636464;
+  margin-top: 2px;
+  text-align: left;
+}
+
+.resume-graduation-date {
+  font-size: 12px;
+  color: #636464;
+  font-style: italic;
+}
+
+.resume-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.resume-skill-category {
+  font-size: 12px;
+}
+
+.resume-skill-category-title {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.resume-skill-list {
+  color: black;
+  line-height: 1.4;
+}
+
+.resume-summary {
+  font-size: 12px;
+  line-height: 1.6;
+  color: black;
+  text-align: justify;
+}
+
+.resume-certifications {
+  font-size: 12px;
+  color: black;
+}
+
+.resume-no-print {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #666;
+}
+
+.resume-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.resume-btn {
+  background: var(--branding-color);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.resume-btn:hover {
+  background: black;
+}
+
+.resume-btn:active {
+  transform: translateY(1px);
+}
+
+@media print {
+  .resume-container {
+    padding: 0.5in;
+    font-size: 11px;
+  }
+  .resume-name {
+    font-size: 24px;
+  }
+  .resume-section-title {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 800px) {
   .hero {
     padding: 30px 20px;
@@ -424,5 +646,43 @@ footer .social-media a:hover {
 
   .footer-message a {
     font-size: 18px;
+  }
+
+  .resume-container {
+    line-height: 1;
+    color: black;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    padding-top: 2px;
+  }
+
+  .resume-name {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .resume-title {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+}
+
+@media screen {
+  .navbar {
+    display: block;
+  }
+}
+
+@media print {
+  nav,
+  .navbar,
+  [class*="navbar"] {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
