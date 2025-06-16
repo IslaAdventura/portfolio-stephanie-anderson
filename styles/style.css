@@ -135,21 +135,27 @@ p {
   font-size: 18px;
 }
 
+.contact-page-hero {
+  color: white;
+}
+
 .contact-page-content-container {
   background: black;
   color: white;
-  padding-top: 50px;
-  padding-bottom: 250px;
+  justify-content: center;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 5px 20px;
   text-shadow: 0.2em 0.2em 0.2em var(--branding-color);
+  max-width: 1200px;
 }
 
 .contact-page-content-container h3 {
-  font-size: 53px;
+  font-size: 50px;
 }
 
 .contact-page-email a {
   color: white;
-  font-size: 28px;
   text-decoration: none;
   text-shadow: 0.05em 0.05em 0.05em var(--branding-color);
 }
@@ -161,7 +167,7 @@ p {
 
 .contact-page-social-media a {
   color: white;
-  font-size: 50px;
+  font-size: 25px;
   margin: 20px 20px;
   padding: 18px 26px;
   text-align: center;
@@ -513,7 +519,7 @@ footer .social-media a:hover {
   transform: translateY(1px);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .hero {
     padding: 30px 20px;
   }
@@ -597,7 +603,7 @@ footer .social-media a:hover {
   }
 
   .contact-page-email a {
-    font-size: 20px;
+    font-size: 16px;
     margin-left: -20px;
   }
 
