@@ -1,5 +1,5 @@
 :root {
-  --branding-color: #6c63ff;
+  --branding-color: #848b79;
   --secondary-color: #fff;
   --heading-font-family: "Noto Serif", serif;
   --default-font-family: "Smythe", system-ui;
@@ -77,7 +77,7 @@ p {
 
 .hero h1 {
   color: transparent;
-  background: linear-gradient(90deg, #6c63ff, white);
+  background: linear-gradient(90deg, #848b79, white);
   background-clip: text;
   -webkit-background-clip: text;
   display: inline-block;
@@ -136,23 +136,112 @@ p {
 }
 
 .contact-page-hero {
-  color: white;
+  color: black;
 }
 
 .contact-page-content-container {
-  background: black;
-  color: white;
   justify-content: center;
   margin: 0 auto;
   min-height: 100vh;
-  padding: 5px 20px;
-  text-shadow: 0.2em 0.2em 0.2em var(--branding-color);
   max-width: 1200px;
+  padding: 0 20px;
 }
 
-.contact-page-content-container h3 {
-  font-size: 50px;
+.contact-grid {
+  background: var(--secondary-color);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  gap: 2rem;
+  padding: 2rem 0;
+  margin-bottom: 3rem;
 }
+
+.contact-card {
+  background: linear-gradient(145deg, rgb(86, 86, 86), #848b79);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.contact-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-card:hover::before {
+  left: 100%;
+}
+
+.contact-card:hover {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border-color: none;
+}
+
+.contact-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: black;
+  text-shadow: 0 0 10px rgba(129, 219, 189, 0.464);
+}
+
+.contact-card h3 {
+  color: black;
+  font-size: 40px;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(129, 219, 189, 0.464);
+}
+
+.contact-card p {
+  color: black;
+  font-size: 28px;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  text-shadow: 0 0 10px rgba(129, 219, 189, 0.464);
+}
+
+.contact-link {
+  background: linear-gradient(
+    45deg,
+    #999 5%,
+    #fff 10%,
+    #ccc 30%,
+    #ddd 50%,
+    #ccc 70%,
+    #fff 80%,
+    #999 95%
+  );
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+  color: #000;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin: 0;
+  outline: none;
+  padding: 0.8rem 2rem;
+  position: relative;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-link:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/*break her old code down here*/
 
 .contact-page-email a {
   color: white;
@@ -203,7 +292,6 @@ p {
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
   text-decoration: none;
   transition: all 0.2s ease-in-out;
-  border: 1px solid var(--branding-color);
 }
 
 .metallic-button:hover {
