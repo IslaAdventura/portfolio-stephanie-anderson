@@ -43,13 +43,20 @@
     />
     <title>About | Stephanie Anderson</title>
   </head>
+
   <body>
     <nav
       class="navbar navbar-expand-lg sticky-top bg-body-tertiary"
       data-bs-theme="dark"
+      aria-label="Main navigation"
     >
       <div class="container-fluid">
-        <a class="navbar-brand me-5" href="index.html">Stephanie Anderson</a>
+        <a
+          class="navbar-brand me-5"
+          href="index.html"
+          aria-label="Stephanie Anderson - Home"
+          >Stephanie Anderson</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -57,28 +64,30 @@
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
-          aria-label="Toggle navigation"
+          aria-label="Toggle navigation menu"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link me-3" aria-current="page" href="index.html"
-                >Home</a
-              >
+              <a class="nav-link me-3" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a
                 class="nav-link projects me-3"
-                aria-current="page"
                 href="projects.html"
                 title="Explore my projects"
                 >Projects</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link me-3 active" href="about.html">Skills</a>
+              <a
+                class="nav-link me-3 active"
+                href="about.html"
+                aria-current="page"
+                >Skills</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link me-3" href="work.html">Resume</a>
@@ -92,8 +101,9 @@
                 class="nav-link me-3"
                 title="Visit my WordPress page"
                 target="_blank"
+                aria-label="WordPress website (opens in new tab)"
               >
-                WordPress</a
+                WordPress<span class="sr-only"> (opens in new tab)</span></a
               >
             </li>
 
@@ -103,8 +113,11 @@
                 class="nav-link me-3"
                 title="Visit my SheCodes profile"
                 target="_blank"
+                aria-label="SheCodes profile (opens in new tab)"
               >
-                SheCodes profile</a
+                SheCodes profile<span class="sr-only">
+                  (opens in new tab)</span
+                ></a
               >
             </li>
 
@@ -114,8 +127,10 @@
                 class="nav-link me-3"
                 title="LinkedIn"
                 target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
+                aria-label="LinkedIn profile (opens in new tab)"
+                ><i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                <span class="sr-only">LinkedIn</span></a
+              >
             </li>
 
             <li class="nav-item">
@@ -124,8 +139,10 @@
                 class="nav-link me-3"
                 title="GitHub"
                 target="_blank"
+                aria-label="GitHub profile (opens in new tab)"
               >
-                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                <span class="sr-only">GitHub</span>
               </a>
             </li>
           </ul>
@@ -133,208 +150,214 @@
       </div>
     </nav>
 
-    <div class="content-container container">
-      <h1 class="skill-h1 mb-4">Skills</h1>
+    <!-- Main Content -->
+    <main id="main-content">
+      <div class="content-container container">
+        <h1 class="skill-h1 mb-4">Skills</h1>
 
-      <div class="row mt-5">
-        <div class="col-3 mb-3 mt-3 p-1 skill">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/010/original/icon-html.png?1711034484"
-            alt="HTML"
-            title="HTML is the backbone of web design, crucial for content creation."
-            class="block mb-2 img-fluid ps-3 pe-3 rounded false"
-          />
-          <div class="skill-text block center">HTML</div>
-        </div>
+        <section aria-labelledby="technical-skills">
+          <h2 id="technical-skills" class="sr-only">Technical Skills</h2>
+          <div class="row mt-5">
+            <div class="col-3 mb-3 mt-3 p-1 skill">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/010/original/icon-html.png?1711034484"
+                alt="HTML5 logo"
+                title="HTML is the backbone of web design, crucial for content creation."
+                class="block mb-2 img-fluid ps-3 pe-3 rounded false"
+              />
+              <div class="skill-text block center">HTML</div>
+            </div>
 
-        <div class="col-3 mb-3 mt-3 p-1 skill">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/004/original/icon-css.png?1711033534"
-            alt="CSS"
-            title="CSS styles websites, essential for layout and visual appeal."
-            class="block mb-2 img-fluid ps-3 pe-3 rounded false"
-          />
-          <div class="skill-text block center">CSS</div>
-        </div>
+            <div class="col-3 mb-3 mt-3 p-1 skill">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/004/original/icon-css.png?1711033534"
+                alt="CSS3 logo"
+                title="CSS styles websites, essential for layout and visual appeal."
+                class="block mb-2 img-fluid ps-3 pe-3 rounded false"
+              />
+              <div class="skill-text block center">CSS</div>
+            </div>
 
-        <div class="col-3 mb-3 mt-3 p-1 skill">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/011/original/icon-js.png?1711033542"
-            alt="JavaScript"
-            title="JavaScript enables user interactions, essential for modern applications."
-            class="block mb-2 img-fluid ps-3 pe-3 rounded false"
-          />
-          <div class="skill-text block center">JavaScript</div>
-        </div>
+            <div class="col-3 mb-3 mt-3 p-1 skill">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/011/original/icon-js.png?1711033542"
+                alt="JavaScript logo"
+                title="JavaScript enables user interactions, essential for modern applications."
+                class="block mb-2 img-fluid ps-3 pe-3 rounded false"
+              />
+              <div class="skill-text block center">JavaScript</div>
+            </div>
 
-        <div class="col-3 mb-3 mt-3 p-1 skill">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/016/original/icon-react.png?1711641851"
-            alt="React.js"
-            title="React.js is a popular JavaScript framework that makes interactive and modern web pages."
-            class="block mb-2 img-fluid ps-3 pe-3 rounded false"
-          />
-          <div class="skill-text block center">React.js</div>
-        </div>
+            <div class="col-3 mb-3 mt-3 p-1 skill">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/016/original/icon-react.png?1711641851"
+                alt="React.js logo"
+                title="React.js is a popular JavaScript framework that makes interactive and modern web pages."
+                class="block mb-2 img-fluid ps-3 pe-3 rounded false"
+              />
+              <div class="skill-text block center">React.js</div>
+            </div>
 
-        <div class="col-3 mb-3 p-1 skill">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/005/original/editor.png?1701382155"
-            alt="VSCode"
-            title="VSCode is a the #1 tool for writing code easily and quickly."
-            class="block mb-2 img-fluid ps-3 pe-3 rounded false"
-          />
-          <div class="skill-text block center">VSCode</div>
-        </div>
+            <div class="col-3 mb-3 p-1 skill">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/005/original/editor.png?1701382155"
+                alt="VS Code logo"
+                title="VSCode is a the #1 tool for writing code easily and quickly."
+                class="block mb-2 img-fluid ps-3 pe-3 rounded false"
+              />
+              <div class="skill-text block center">VSCode</div>
+            </div>
 
-        <div class="col-3 mb-3 p-1 skill">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/002/original/icon-api.png?1712224402"
-            alt="API"
-            title="API's connect your code to other applications, making them work together."
-            class="block mb-2 img-fluid ps-3 pe-3 rounded false"
-          />
-          <div class="skill-text block center">API</div>
-        </div>
+            <div class="col-3 mb-3 p-1 skill">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/002/original/icon-api.png?1712224402"
+                alt="API integration icon"
+                title="API's connect your code to other applications, making them work together."
+                class="block mb-2 img-fluid ps-3 pe-3 rounded false"
+              />
+              <div class="skill-text block center">API</div>
+            </div>
 
-        <div class="col-3 mb-3 p-1 skill">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/017/original/github.png?1701382623"
-            alt="GitHub"
-            title="Use GitHub to keep and work on code with others."
-            class="block mb-2 img-fluid ps-3 pe-3 rounded false"
-          />
-          <div class="skill-text block center">GitHub</div>
-        </div>
+            <div class="col-3 mb-3 p-1 skill">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/017/original/github.png?1701382623"
+                alt="GitHub logo"
+                title="Use GitHub to keep and work on code with others."
+                class="block mb-2 img-fluid ps-3 pe-3 rounded false"
+              />
+              <div class="skill-text block center">GitHub</div>
+            </div>
 
-        <div class="col-3 mb-3 p-1 skill">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/009/original/hosting.png?1701382192"
-            alt="Hosting"
-            title="Understand hosting to publish and keep websites online."
-            class="block mb-2 img-fluid ps-3 pe-3 rounded false"
-          />
-          <div class="skill-text block center">Hosting</div>
-        </div>
+            <div class="col-3 mb-3 p-1 skill">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/009/original/hosting.png?1701382192"
+                alt="Web hosting icon"
+                title="Understand hosting to publish and keep websites online."
+                class="block mb-2 img-fluid ps-3 pe-3 rounded false"
+              />
+              <div class="skill-text block center">Hosting</div>
+            </div>
 
-        <div class="col-3 mb-3 p-1 skill">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/018/original/icon-python.png?1712224383"
-            alt="Python"
-            title="Python is a high-level, interpreted programming language known for its readable syntax and versatility across web development, data science, automation, and many other domains."
-            class="block mb-2 img-fluid ps-3 pe-3 rounded false"
-          />
-          <div class="skill-text block center">Python</div>
-        </div>
+            <div class="col-3 mb-3 p-1 skill">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/018/original/icon-python.png?1712224383"
+                alt="Python logo"
+                title="Python is a high-level, interpreted programming language known for its readable syntax and versatility across web development, data science, automation, and many other domains."
+                class="block mb-2 img-fluid ps-3 pe-3 rounded false"
+              />
+              <div class="skill-text block center">Python</div>
+            </div>
 
-        <div class="col-3 mb-3 p-1 skill">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/020/original/icon-data-structure.png?1712224420"
-            alt="Data Structure"
-            title="Data structures are organized ways of storing and arranging data in computer memory to enable efficient access, modification, and operations."
-            class="block mb-2 img-fluid ps-3 pe-3 rounded false"
-          />
-          <div class="skill-text block center">Data Structure</div>
-        </div>
+            <div class="col-3 mb-3 p-1 skill">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/020/original/icon-data-structure.png?1712224420"
+                alt="Data structures icon"
+                title="Data structures are organized ways of storing and arranging data in computer memory to enable efficient access, modification, and operations."
+                class="block mb-2 img-fluid ps-3 pe-3 rounded false"
+              />
+              <div class="skill-text block center">Data Structure</div>
+            </div>
 
-        <div class="col-3 mb-3 p-1 skill">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/022/original/icon-oop.png?1712224445"
-            alt="OOP"
-            title="OOP is a programming paradigm that organizes code into objects containing both data (attributes) and functions (methods) that operate on that data, promoting code reusability and modularity."
-            class="block mb-2 img-fluid ps-3 pe-3 rounded false"
-          />
-          <div class="skill-text block center">OOP</div>
-        </div>
+            <div class="col-3 mb-3 p-1 skill">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/022/original/icon-oop.png?1712224445"
+                alt="Object-oriented programming icon"
+                title="OOP is a programming paradigm that organizes code into objects containing both data (attributes) and functions (methods) that operate on that data, promoting code reusability and modularity."
+                class="block mb-2 img-fluid ps-3 pe-3 rounded false"
+              />
+              <div class="skill-text block center">OOP</div>
+            </div>
 
-        <div class="col-3 mb-3 p-1 skill">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/021/original/icon-file-manipulation.png?1712224473"
-            alt="File Manipulation"
-            title="File manipulation involves programmatically reading from, writing to, creating, deleting, and modifying files and directories on a computer's file system."
-            class="block mb-2 img-fluid ps-3 pe-3 rounded false"
-          />
-          <div class="skill-text block center">File Manipulation</div>
-        </div>
+            <div class="col-3 mb-3 p-1 skill">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/021/original/icon-file-manipulation.png?1712224473"
+                alt="File manipulation icon"
+                title="File manipulation involves programmatically reading from, writing to, creating, deleting, and modifying files and directories on a computer's file system."
+                class="block mb-2 img-fluid ps-3 pe-3 rounded false"
+              />
+              <div class="skill-text block center">File Manipulation</div>
+            </div>
 
-        <div class="col-3 mb-3 p-1 skill">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/023/original/icon-data-visualization.png?1712224496"
-            alt="Data Visualization"
-            title="Data visualization is the process of creating graphical representations of data through charts, graphs, and interactive displays to make patterns and insights more easily understandable."
-            class="block mb-2 img-fluid ps-3 pe-3 rounded false"
-          />
-          <div class="skill-text block center">Data Visualization</div>
-        </div>
+            <div class="col-3 mb-3 p-1 skill">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/023/original/icon-data-visualization.png?1712224496"
+                alt="Data visualization icon"
+                title="Data visualization is the process of creating graphical representations of data through charts, graphs, and interactive displays to make patterns and insights more easily understandable."
+                class="block mb-2 img-fluid ps-3 pe-3 rounded false"
+              />
+              <div class="skill-text block center">Data Visualization</div>
+            </div>
 
-        <div class="col-3 mb-3 p-1 skill">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/024/original/icon-data-manipulation.png?1712224508"
-            alt="Data Manipulation"
-            title="Data manipulation encompasses the processes of cleaning, transforming, filtering, aggregating, and reshaping raw data to prepare it for analysis or specific use cases."
-            class="block mb-2 img-fluid ps-3 pe-3 rounded false"
-          />
-          <div class="skill-text block center">Data Manipulation</div>
-        </div>
+            <div class="col-3 mb-3 p-1 skill">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/024/original/icon-data-manipulation.png?1712224508"
+                alt="Data manipulation icon"
+                title="Data manipulation encompasses the processes of cleaning, transforming, filtering, aggregating, and reshaping raw data to prepare it for analysis or specific use cases."
+                class="block mb-2 img-fluid ps-3 pe-3 rounded false"
+              />
+              <div class="skill-text block center">Data Manipulation</div>
+            </div>
 
-        <div class="col-3 mb-3 p-1 skill">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/001/original/icon-AI.png?1711011711"
-            alt="AI"
-            title="AI is the field of computer science focused on creating systems that can perform tasks typically requiring human intelligence, such as learning, reasoning, and pattern recognition."
-            class="block mb-2 img-fluid ps-3 pe-3 rounded false"
-          />
-          <div class="skill-text block center">AI</div>
-        </div>
+            <div class="col-3 mb-3 p-1 skill">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/001/original/icon-AI.png?1711011711"
+                alt="Artificial Intelligence icon"
+                title="AI is the field of computer science focused on creating systems that can perform tasks typically requiring human intelligence, such as learning, reasoning, and pattern recognition."
+                class="block mb-2 img-fluid ps-3 pe-3 rounded false"
+              />
+              <div class="skill-text block center">AI</div>
+            </div>
 
-        <div class="col-3 mb-3 p-1 skill">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/019/original/Git-Icon-1788C.png?1710331679"
-            alt="Git"
-            title="Git is a distributed version control system that tracks changes in source code, enabling multiple developers to collaborate on projects while maintaining a complete history of modifications."
-            class="block mb-2 img-fluid ps-3 pe-3 rounded false"
-          />
-          <div class="skill-text block center">Git</div>
-        </div>
+            <div class="col-3 mb-3 p-1 skill">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/019/original/Git-Icon-1788C.png?1710331679"
+                alt="Git version control logo"
+                title="Git is a distributed version control system that tracks changes in source code, enabling multiple developers to collaborate on projects while maintaining a complete history of modifications."
+                class="block mb-2 img-fluid ps-3 pe-3 rounded false"
+              />
+              <div class="skill-text block center">Git</div>
+            </div>
 
-        <div class="col-3 mb-3 p-1 skill">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/003/original/bootstrap.png?1701382150"
-            alt="Bootstrap"
-            title=" Bootstrap is a popular front-end CSS framework that provides pre-built components and responsive grid systems to rapidly develop mobile-first web interfaces."
-            class="block mb-2 img-fluid ps-3 pe-3 rounded false"
-          />
-          <div class="skill-text block center">Bootstrap</div>
-        </div>
+            <div class="col-3 mb-3 p-1 skill">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/003/original/bootstrap.png?1701382150"
+                alt="Bootstrap framework logo"
+                title=" Bootstrap is a popular front-end CSS framework that provides pre-built components and responsive grid systems to rapidly develop mobile-first web interfaces."
+                class="block mb-2 img-fluid ps-3 pe-3 rounded false"
+              />
+              <div class="skill-text block center">Bootstrap</div>
+            </div>
 
-        <div class="col-3 mb-3 p-1 skill">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/014/original/seo.png?1701426631"
-            alt="SEO"
-            title="(Search Engine Optimization): SEO is the practice of optimizing websites and content to improve their visibility and ranking in search engine results pages."
-            class="block mb-2 img-fluid ps-3 pe-3 rounded false"
-          />
-          <div class="skill-text block center">SEO</div>
-        </div>
+            <div class="col-3 mb-3 p-1 skill">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/014/original/seo.png?1701426631"
+                alt="Search Engine Optimization icon"
+                title="(Search Engine Optimization): SEO is the practice of optimizing websites and content to improve their visibility and ranking in search engine results pages."
+                class="block mb-2 img-fluid ps-3 pe-3 rounded false"
+              />
+              <div class="skill-text block center">SEO</div>
+            </div>
 
-        <div class="col-3 mb-3 p-1 skill">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/013/original/responsive.png?1701382225"
-            alt="Responsive"
-            title="Responsive design is an approach to web development that ensures websites automatically adapt and display properly across different screen sizes and devices."
-            class="block mb-2 img-fluid ps-3 pe-3 rounded false"
-          />
-          <div class="skill-text block center">Responsive</div>
-        </div>
+            <div class="col-3 mb-3 p-1 skill">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/013/original/responsive.png?1701382225"
+                alt="Responsive design icon"
+                title="Responsive design is an approach to web development that ensures websites automatically adapt and display properly across different screen sizes and devices."
+                class="block mb-2 img-fluid ps-3 pe-3 rounded false"
+              />
+              <div class="skill-text block center">Responsive</div>
+            </div>
 
-        <div class="col-3 mb-3 p-1 skill-wordpress">
-          <i class="fa-brands fa-wordpress"></i>
-          <div class="skill-text block center">WordPress</div>
-        </div>
+            <div class="col-3 mb-3 p-1 skill-wordpress">
+              <i class="fa-brands fa-wordpress" aria-hidden="true"></i>
+              <div class="skill-text block center">WordPress</div>
+            </div>
+          </div>
+        </section>
       </div>
-    </div>
+    </main>
 
-    <footer class="container mb-4">
+    <footer role="contentinfo" class="container mb-4">
       <div
         class="contact-box d-flex justify-content-between mb-2 d-none d-md-flex"
       >
@@ -351,41 +374,60 @@
         </div>
       </div>
 
-      <div class="d-flex justify-content-center mb-5">
-        <a href="mailto:srglover1@yahoo.com" title="Email" class="email-link">
-          <i class="fa-regular fa-envelope"></i
-        ></a>
-
-        <div class="social-media d-flex justify-content-center">
+      <section aria-label="Contact links">
+        <div class="d-flex justify-content-center mb-5">
           <a
-            href="https://github.com/IslaAdventura"
-            title="GitHub"
-            target="_blank"
+            href="mailto:srglover1@yahoo.com"
+            title="Email"
+            class="email-link"
+            aria-label="Send email to srglover1@yahoo.com"
           >
-            <i class="fa-brands fa-github"></i>
+            <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+            <span class="sr-only">Email</span>
           </a>
+
           <div class="social-media d-flex justify-content-center">
             <a
-              href="https://www.linkedin.com/in/stephanie-r-anderson-/"
-              title="LinkedIn"
+              href="https://github.com/IslaAdventura"
+              title="GitHub"
               target="_blank"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
+              aria-label="GitHub profile (opens in new tab)"
+            >
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+              <span class="sr-only">GitHub</span>
+            </a>
+            <div class="social-media d-flex justify-content-center">
+              <a
+                href="https://www.linkedin.com/in/stephanie-r-anderson-/"
+                title="LinkedIn"
+                target="_blank"
+                aria-label="LinkedIn profile (opens in new tab)"
+                ><i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                <span class="sr-only">LinkedIn</span></a
+              >
+            </div>
           </div>
         </div>
-      </div>
+      </section>
       <p class="text-center mt-4 footer-message">
         ✨ This website was coded by
-        <a href="https://github.com/IslaAdventura" target="_blank"
+        <a
+          href="https://github.com/IslaAdventura"
+          target="_blank"
+          aria-label="Stephanie Anderson's GitHub (opens in new tab)"
           >Stephanie Anderson</a
         >, <br />
         is on
         <a
           href="https://github.com/IslaAdventura/portfolio-stephanie-anderson"
           target="_blank"
+          aria-label="Portfolio source code on GitHub (opens in new tab)"
           >GitHub</a
         >, and hosted by
-        <a href="https://stellar-dusk-a814e0.netlify.app/" target="_blank"
+        <a
+          href="https://stellar-dusk-a814e0.netlify.app/"
+          target="_blank"
+          aria-label="Live website on Netlify (opens in new tab)"
           >Netlify</a
         >
         ✨
