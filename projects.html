@@ -165,453 +165,336 @@
 
     <!-- Main Content -->
     <main id="main-content">
-      <h1 class="title-line">·•· Bringing Ideas to Life Through Code ·•·</h1>
-
-      <!-- Projects Timeline -->
-      <section class="projects-timeline" aria-labelledby="projects-heading">
-        <h2 id="projects-heading" class="sr-only">Featured Projects</h2>
+      <!-- Projects Grid -->
+      <section class="projects-grid" aria-labelledby="projects-heading">
+        <h1 class="projects-title" id="projects-heading">
+          ·•· Bringing Ideas to Life Through Code ·•·
+        </h1>
 
         <!-- Featured Project: Expense Graveyard -->
-        <article class="timeline-item featured">
-          <div class="timeline-node"></div>
-          <div class="timeline-content">
-            <div class="timeline-image">
-              <img
-                src="images/ExpenseGraveyard.png"
-                alt="Screenshot of Expense Graveyard app showing expense tracking interface with horror-themed design"
-              />
-              <div class="tech-stack">
-                <span class="tech-badge">React</span>
-                <span class="tech-badge">Bootstrap</span>
-                <span class="tech-badge">API</span>
-                <span class="tech-badge">CSS</span>
-              </div>
+        <article class="featured-project">
+          <div>
+            <div class="tech-tags">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Bootstrap</span>
+              <span class="tech-tag">API</span>
+              <span class="tech-tag">CSS</span>
             </div>
-            <div class="timeline-details">
-              <h3>
-                <span class="project-emoji">🪦</span>
-                Expense Graveyard
-              </h3>
-              <p class="timeline-description">
-                A React.js expense tracking application that calculates shared
-                costs for groups across dining and hotel expenses, featuring a
-                horror-themed interface with graveyard imagery. Features dynamic
-                expense splitting, customizable tax calculations, real-time cost
-                breakdowns, and API integration for weather data and lunar
-                phases.
-              </p>
-              <div class="timeline-actions">
-                <a
-                  href="https://expense-graveyard.netlify.app/"
-                  class="view-project-btn"
-                  target="_blank"
-                  aria-label="View Expense Graveyard project (opens in new tab)"
-                >
-                  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
-                  View Project
-                  <span class="sr-only"> (opens in new tab)</span>
-                </a>
-                <div class="project-metrics">
-                  <span class="metric">
-                    <i class="fas fa-code" aria-hidden="true"></i>
-                    React
-                  </span>
-                  <span class="metric">
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    Featured
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- AI Travel Itinerary Generator -->
-        <article class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-content">
-            <div class="timeline-image">
-              <video
-                controls
-                aria-label="Demo video of AI Travel Itinerary Generator"
+            <h3>
+              <span class="project-emoji">🪦</span>
+              Expense Graveyard
+            </h3>
+            <p class="project-card-description">
+              A React.js expense tracking application that calculates shared
+              costs for groups across dining and hotel expenses, featuring a
+              horror-themed interface with graveyard imagery. Features dynamic
+              expense splitting, customizable tax calculations, real-time cost
+              breakdowns, and API integration for weather data and lunar phases.
+            </p>
+            <div class="project-actions">
+              <a
+                href="https://expense-graveyard.netlify.app/"
+                class="project-btn project-btn-primary"
+                target="_blank"
+                aria-label="View Expense Graveyard project (opens in new tab)"
               >
-                <source
-                  src="images/Python-Travel-Itinerary.mp4"
-                  type="video/mp4"
-                />
-                <track kind="captions" srclang="en" label="English captions" />
-                Your browser does not support the video tag.
-              </video>
-              <div class="tech-stack">
-                <span class="tech-badge">Python</span>
-                <span class="tech-badge">AI</span>
-                <span class="tech-badge">API</span>
-                <span class="tech-badge">Rich</span>
-              </div>
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                View Project
+              </a>
+              <a
+                href="https://github.com/IslaAdventura"
+                class="project-btn project-btn-secondary"
+                target="_blank"
+                aria-label="View source code (opens in new tab)"
+              >
+                <i class="fab fa-github" aria-hidden="true"></i>
+                Source Code
+              </a>
             </div>
-            <div class="timeline-details">
-              <h3>
-                <span class="project-emoji">🗺️</span>
-                AI Travel Itinerary Generator
-              </h3>
-              <p class="timeline-description">
-                A Python-based travel planning application that generates custom
-                road trip itineraries using AI integration and real-time weather
-                data. Features input validation, formatted output with travel
-                times, activity recommendations, restaurant suggestions, and
-                cost estimates.
-              </p>
-              <div class="timeline-actions">
-                <a
-                  href="https://colab.research.google.com/drive/1TRclyW24wu7WjbKxiOZoIkYZIQhhISc0?usp=sharing"
-                  class="view-project-btn"
-                  target="_blank"
-                  aria-label="View AI Travel Itinerary Generator on Google Colab (opens in new tab)"
-                >
-                  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
-                  View Project
-                  <span class="sr-only"> (opens in new tab)</span>
-                </a>
-                <div class="project-metrics">
-                  <span class="metric">
-                    <i class="fab fa-python" aria-hidden="true"></i>
-                    Python
-                  </span>
-                  <span class="metric">
-                    <i class="fas fa-robot" aria-hidden="true"></i>
-                    AI
-                  </span>
-                </div>
-              </div>
-            </div>
+          </div>
+          <div class="project-card-image">
+            <img
+              src="images/ExpenseGraveyard.png"
+              alt="Screenshot of Expense Graveyard app showing expense tracking interface"
+            />
           </div>
         </article>
 
-        <!-- English Dictionary -->
-        <article class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-content">
-            <div class="timeline-image">
-              <img
-                src="images/react-dictionary.png"
-                alt="Screenshot of English Dictionary app showing word definition interface with travel-themed design"
-              />
-              <div class="tech-stack">
-                <span class="tech-badge">React</span>
-                <span class="tech-badge">API</span>
-                <span class="tech-badge">Lottie</span>
-                <span class="tech-badge">CSS</span>
-              </div>
+        <article class="featured-project">
+          <div>
+            <div class="tech-tags">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">API</span>
+              <span class="tech-tag">Lottie</span>
+              <span class="tech-tag">CSS</span>
             </div>
-            <div class="timeline-details">
-              <h3>
-                <span class="project-emoji">📖</span>
-                English Dictionary
-              </h3>
-              <p class="timeline-description">
-                A React-based dictionary application providing definitions,
-                examples, synonyms, and antonyms. Features engaging Lottie
-                animations of hot air balloons with a travel-themed aesthetic,
-                multiple API integrations for dictionary results and contextual
-                imagery, plus comprehensive error handling.
-              </p>
-              <div class="timeline-actions">
-                <a
-                  href="https://subtle-froyo-698809.netlify.app/"
-                  class="view-project-btn"
-                  target="_blank"
-                  aria-label="View English Dictionary project (opens in new tab)"
-                >
-                  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
-                  View Project
-                  <span class="sr-only"> (opens in new tab)</span>
-                </a>
-                <div class="project-metrics">
-                  <span class="metric">
-                    <i class="fab fa-react" aria-hidden="true"></i>
-                    React
-                  </span>
-                  <span class="metric">
-                    <i class="fas fa-book" aria-hidden="true"></i>
-                    Dictionary
-                  </span>
-                </div>
-              </div>
+            <h3>
+              <span class="project-emoji">📖</span>
+              English Dictionary
+            </h3>
+            <p class="project-card-description">
+              A React-based dictionary application providing definitions,
+              examples, synonyms, and antonyms. Features engaging Lottie
+              animations with travel-themed aesthetics and comprehensive API
+              integrations.
+            </p>
+            <div class="project-actions">
+              <a
+                href="https://subtle-froyo-698809.netlify.app/"
+                class="project-btn project-btn-primary"
+                target="_blank"
+                aria-label="View Expense Graveyard project (opens in new tab)"
+              >
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                View Project
+              </a>
+              <a
+                href="https://github.com/IslaAdventura/dictionary-project"
+                class="project-btn project-btn-secondary"
+                target="_blank"
+                aria-label="View source code (opens in new tab)"
+              >
+                <i class="fab fa-github" aria-hidden="true"></i>
+                Source Code
+              </a>
             </div>
+          </div>
+          <div class="project-card-image">
+            <img
+              src="images/react-dictionary.png"
+              alt="Screenshot of English Dictionary app"
+            />
           </div>
         </article>
 
-        <!-- Travel Website -->
-        <article class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-content">
-            <div class="timeline-image">
-              <img
-                src="images/travel.png"
-                alt="Screenshot of responsive travel website showing mobile-first design with tourism content"
+        <article class="featured-project">
+          <div>
+            <div class="tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">AI</span>
+              <span class="tech-tag">API</span>
+              <span class="tech-tag">Rich</span>
+            </div>
+            <h3>
+              <span class="project-emoji">🗺️</span>
+              AI Travel Itinerary Generator
+            </h3>
+            <p class="project-card-description">
+              A Python-based travel planning application generating custom road
+              trip itineraries using AI integration and real-time weather data
+              for comprehensive travel planning.
+            </p>
+
+            <div class="project-actions">
+              <a
+                href="https://colab.research.google.com/drive/1TRclyW24wu7WjbKxiOZoIkYZIQhhISc0"
+                class="project-btn project-btn-primary"
+                target="_blank"
+              >
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                View Project
+              </a>
+            </div>
+          </div>
+          <div class="project-card-image">
+            <video
+              controls
+              aria-label="Demo video of AI Travel Itinerary Generator"
+            >
+              <source
+                src="images/Python-Travel-Itinerary.mp4"
+                type="video/mp4"
               />
-              <div class="tech-stack">
-                <span class="tech-badge">HTML5</span>
-                <span class="tech-badge">CSS3</span>
-                <span class="tech-badge">Bootstrap</span>
-                <span class="tech-badge">Responsive</span>
-              </div>
-            </div>
-            <div class="timeline-details">
-              <h3>
-                <span class="project-emoji">🎢</span>
-                Travel Website
-              </h3>
-              <p class="timeline-description">
-                A mobile-first web platform designed to deliver exceptional user
-                experiences across all device types. Built with responsive
-                design principles, employing flexible grid systems, media
-                queries, and adaptive layouts for optimal content presentation
-                from desktop to mobile.
-              </p>
-              <div class="timeline-actions">
-                <a
-                  href="https://uor-travel-project.netlify.app/"
-                  class="view-project-btn"
-                  target="_blank"
-                  aria-label="View Travel Website project (opens in new tab)"
-                >
-                  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
-                  View Project
-                  <span class="sr-only"> (opens in new tab)</span>
-                </a>
-                <div class="project-metrics">
-                  <span class="metric">
-                    <i class="fas fa-mobile-alt" aria-hidden="true"></i>
-                    Responsive
-                  </span>
-                  <span class="metric">
-                    <i class="fas fa-plane" aria-hidden="true"></i>
-                    Travel
-                  </span>
-                </div>
-              </div>
-            </div>
+              Your browser does not support the video tag.
+            </video>
           </div>
         </article>
 
-        <!-- AI Poem Generator -->
-        <article class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-content">
-            <div class="timeline-image">
-              <img
-                src="images/ai-poem-gen-2.png"
-                alt="Screenshot of AI Poem Generator app showing creative writing interface with rollercoaster theme"
-              />
-              <div class="tech-stack">
-                <span class="tech-badge">JavaScript</span>
-                <span class="tech-badge">AI API</span>
-                <span class="tech-badge">HTML5</span>
-                <span class="tech-badge">CSS3</span>
-              </div>
+        <article class="featured-project">
+          <div>
+            <div class="tech-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">Bootstrap</span>
+              <span class="tech-tag">Responsive</span>
             </div>
-            <div class="timeline-details">
-              <h3>
-                <span class="project-emoji">🧾</span>
-                AI Poem Generator
-              </h3>
-              <p class="timeline-description">
-                An innovative creative writing application that harnesses
-                artificial intelligence to craft personalized poems combining
-                rollercoaster themes with user-selected topics. Features an
-                interactive interface where users specify subjects and receive
-                uniquely generated verse.
-              </p>
-              <div class="timeline-actions">
-                <a
-                  href="https://ai-poem-generator-sanderson.netlify.app/"
-                  class="view-project-btn"
-                  target="_blank"
-                  aria-label="View AI Poem Generator project (opens in new tab)"
-                >
-                  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
-                  View Project
-                  <span class="sr-only"> (opens in new tab)</span>
-                </a>
-                <div class="project-metrics">
-                  <span class="metric">
-                    <i class="fas fa-robot" aria-hidden="true"></i>
-                    AI
-                  </span>
-                  <span class="metric">
-                    <i class="fas fa-feather-alt" aria-hidden="true"></i>
-                    Creative
-                  </span>
-                </div>
-              </div>
+            <h3>
+              <span class="project-emoji">🎢</span>
+              Travel Website
+            </h3>
+            <p class="project-card-description">
+              A mobile-first web platform designed for exceptional user
+              experiences across all devices, employing responsive design
+              principles and adaptive layouts.
+            </p>
+            <div class="project-actions">
+              <a
+                href="https://uor-travel-project.netlify.app/"
+                class="project-btn project-btn-primary"
+                target="_blank"
+              >
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                View Project
+              </a>
+              <a
+                href="https://github.com/IslaAdventura/travel-project"
+                class="project-btn project-btn-secondary"
+                target="_blank"
+                aria-label="View source code (opens in new tab)"
+              >
+                <i class="fab fa-github" aria-hidden="true"></i>
+                Source Code
+              </a>
             </div>
+          </div>
+          <div class="project-card-image">
+            <img
+              src="images/travel.png"
+              alt="Screenshot of responsive travel website"
+            />
           </div>
         </article>
 
-        <!-- Weather App -->
-        <article class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-content">
-            <div class="timeline-image">
-              <img
-                src="images/weather-app.png"
-                alt="Screenshot of weather application showing current conditions and forecast functionality"
-              />
-              <div class="tech-stack">
-                <span class="tech-badge">React</span>
-                <span class="tech-badge">Weather API</span>
-                <span class="tech-badge">CSS3</span>
-                <span class="tech-badge">Responsive</span>
-              </div>
+        <article class="featured-project">
+          <div>
+            <div class="tech-tags">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">AI API</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
             </div>
-            <div class="timeline-details">
-              <h3>
-                <span class="project-emoji">☀️</span>
-                Welcome to Your Weather
-              </h3>
-              <p class="timeline-description">
-                A comprehensive meteorological platform built with React that
-                delivers real-time weather data and forecasts for locations
-                worldwide. Integrates with external weather APIs to provide
-                accurate current conditions, temperature readings, and extended
-                forecasts.
-              </p>
-              <div class="timeline-actions">
-                <a
-                  href="https://resplendent-caramel-d48712.netlify.app/"
-                  class="view-project-btn"
-                  target="_blank"
-                  aria-label="View Weather App project (opens in new tab)"
-                >
-                  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
-                  View Project
-                  <span class="sr-only"> (opens in new tab)</span>
-                </a>
-                <div class="project-metrics">
-                  <span class="metric">
-                    <i class="fab fa-react" aria-hidden="true"></i>
-                    React
-                  </span>
-                  <span class="metric">
-                    <i class="fas fa-cloud-sun" aria-hidden="true"></i>
-                    Weather
-                  </span>
-                </div>
-              </div>
+            <h3>
+              <span class="project-emoji">🧾</span>
+              AI Poem Generator
+            </h3>
+            <p class="project-card-description">
+              An innovative creative writing application that harnesses
+              artificial intelligence to craft personalized poems with
+              interactive user interfaces.
+            </p>
+            <div class="project-actions">
+              <a
+                href="https://ai-poem-generator-sanderson.netlify.app/"
+                class="project-btn project-btn-primary"
+                target="_blank"
+              >
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                View Project
+              </a>
+              <a
+                href="https://github.com/IslaAdventura/poem-generator"
+                class="project-btn project-btn-secondary"
+                target="_blank"
+                aria-label="View source code (opens in new tab)"
+              >
+                <i class="fab fa-github" aria-hidden="true"></i>
+                Source Code
+              </a>
             </div>
+          </div>
+          <div class="project-card-image">
+            <img
+              src="images/ai-poem-gen-2.png"
+              alt="Screenshot of AI Poem Generator app"
+            />
           </div>
         </article>
 
-        <!-- World Clock -->
-        <article class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-content">
-            <div class="timeline-image">
-              <img
-                src="images/world-clock.png"
-                alt="Screenshot of World Clock app showing multiple time zones with real-time synchronization"
-              />
-              <div class="tech-stack">
-                <span class="tech-badge">JavaScript</span>
-                <span class="tech-badge">HTML5</span>
-                <span class="tech-badge">CSS3</span>
-                <span class="tech-badge">Vanilla JS</span>
-              </div>
+        <article class="featured-project">
+          <div>
+            <div class="tech-tags">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Weather API</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">Responsive</span>
             </div>
-            <div class="timeline-details">
-              <h3>
-                <span class="project-emoji">🕒</span>
-                World Clock
-              </h3>
-              <p class="timeline-description">
-                A dynamic time-zone management tool providing real-time
-                synchronization across multiple international cities. Built with
-                vanilla JavaScript, featuring an intuitive grid-based interface
-                displaying location names, current times, and local dates for
-                each selected timezone.
-              </p>
-              <div class="timeline-actions">
-                <a
-                  href="https://world-clock-jsproject-october2024.netlify.app/"
-                  class="view-project-btn"
-                  target="_blank"
-                  aria-label="View World Clock project (opens in new tab)"
-                >
-                  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
-                  View Project
-                  <span class="sr-only"> (opens in new tab)</span>
-                </a>
-                <div class="project-metrics">
-                  <span class="metric">
-                    <i class="fab fa-js" aria-hidden="true"></i>
-                    JavaScript
-                  </span>
-                  <span class="metric">
-                    <i class="fas fa-globe" aria-hidden="true"></i>
-                    Global
-                  </span>
-                </div>
-              </div>
+            <h3>
+              <span class="project-emoji">☀️</span>
+              Welcome to Your Weather
+            </h3>
+            <p class="project-card-description">
+              A comprehensive meteorological platform delivering real-time
+              weather data and forecasts for locations worldwide with intuitive
+              interfaces.
+            </p>
+            <div class="project-actions">
+              <a
+                href="https://resplendent-caramel-d48712.netlify.app/"
+                class="project-btn project-btn-primary"
+                target="_blank"
+              >
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                View Project
+              </a>
+              <a
+                href="https://github.com/IslaAdventura/weather-react"
+                class="project-btn project-btn-secondary"
+                target="_blank"
+                aria-label="View source code (opens in new tab)"
+              >
+                <i class="fab fa-github" aria-hidden="true"></i>
+                Source Code
+              </a>
             </div>
+          </div>
+          <div class="project-card-image">
+            <img
+              src="images/weather-app.png"
+              alt="Screenshot of weather application"
+            />
           </div>
         </article>
 
-        <!-- Data Visualization -->
-        <article class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-content">
-            <div class="timeline-image">
-              <img
-                src="images/internet-users-per-continent.png"
-                alt="Line graph showing internet usage trends across different continents over time"
-              />
-              <div class="tech-stack">
-                <span class="tech-badge">Python</span>
-                <span class="tech-badge">Data Analysis</span>
-                <span class="tech-badge">CSV</span>
-                <span class="tech-badge">Visualization</span>
-              </div>
+        <article class="featured-project">
+          <div>
+            <div class="tech-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">API</span>
             </div>
-            <div class="timeline-details">
-              <h3>
-                <span class="project-emoji">📈</span>
-                Internet Usage Data Visualization
-              </h3>
-              <p class="timeline-description">
-                A Python project analyzing and visualizing internet usage data
-                across different continents over time. Reads CSV data, organizes
-                by continent and year using dictionary structures, then creates
-                labeled multi-line graphs showing usage trends for easy
-                comparison.
-              </p>
-              <div class="timeline-actions">
-                <button
-                  class="view-project-btn"
-                  disabled
-                  aria-label="Project code not publicly available"
-                >
-                  <i class="fas fa-lock" aria-hidden="true"></i>
-                  Private Project
-                </button>
-                <div class="project-metrics">
-                  <span class="metric">
-                    <i class="fab fa-python" aria-hidden="true"></i>
-                    Python
-                  </span>
-                  <span class="metric">
-                    <i class="fas fa-chart-line" aria-hidden="true"></i>
-                    Data Viz
-                  </span>
-                </div>
-              </div>
+            <h3>
+              <span class="project-emoji">🕒</span>
+              World Clock
+            </h3>
+            <p class="project-card-description">
+              World Clock is a dynamic time-zone management tool that provides
+              real-time synchronization across multiple international cities.
+              Built with vanilla JavaScript, HTML, and CSS, the application
+              features an intuitive grid-based interface displaying location
+              names, current times, and local dates for each selected timezone.
+            </p>
+            <div class="project-actions">
+              <a
+                href="https://world-clock-jsproject-october2024.netlify.app/"
+                target="_blank"
+                class="project-btn project-btn-secondary"
+                aria-label="View source code (opens in new tab)"
+              >
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                View Project
+              </a>
+              <a
+                href="https://github.com/IslaAdventura/world-clock"
+                class="project-btn project-btn-secondary"
+                target="_blank"
+                aria-label="View source code (opens in new tab)"
+              >
+                <i class="fab fa-github" aria-hidden="true"></i>
+                Source Code
+              </a>
             </div>
+          </div>
+          <div class="project-card-image">
+            <img
+              src="images/world-clock.png"
+              class="img-fluid"
+              alt="world clock app"
+            />
           </div>
         </article>
       </section>
     </main>
-
-    <!-- Footer -->
 
     <footer class="contentinfo">
       <section aria-label="Contact links">
