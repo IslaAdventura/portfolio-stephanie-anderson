@@ -20,6 +20,7 @@
   margin: 0 auto;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   min-height: 100vh;
+  perspective: 1200px; /* ADD THIS LINE */
 }
 
 /* Individual Project Cards */
@@ -208,6 +209,27 @@
   margin-bottom: 2rem;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
   border: 2px solid #ffd700;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* ADD THIS LINE */
+  transform-style: preserve-3d; /* ADD THIS LINE */
+}
+
+.featured-project:hover {
+  transform: scale(1.02) rotateY(0deg) rotateX(0deg) translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+  border-color: #ffd700;
+  z-index: 10;
+}
+
+/* 5. ENHANCE your existing image hover effect */
+.featured-project:hover .project-card-image {
+  transform: scale(1.05) translateZ(15px);
+}
+
+/* 4. ADD these new tilt-away effect rules */
+.projects-grid:has(.featured-project:hover) .featured-project:not(:hover) {
+  transform: rotateY(12deg) rotateX(5deg) scale(0.95) translateY(-5px);
+  filter: brightness(0.7) saturate(0.8);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 .featured-project h3 {
@@ -489,7 +511,7 @@ section .flex-container p {
 
 .contact-card {
   background: linear-gradient(
-      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.6),
       rgba(255, 255, 255, 0.7)
     ),
     url("../images/background.jpg") center/cover no-repeat;
@@ -514,13 +536,14 @@ section .flex-container p {
   height: 100%;
 }
 
-.contact-card:hover::before {
-  left: 100%;
+.contact-grid:has(.contact-card:hover) .contact-card:not(:hover) {
+  filter: grayscale(1) brightness(0.6);
+  transform: scale(0.95);
 }
 
 .contact-card:hover {
-  box-shadow: 0 20px 60px rgba(255, 255, 255, 0.5) !important;
-  border-color: none;
+  transform: scale(1.02);
+  box-shadow: 0 12px 40px rgba(248, 235, 235, 0.4);
 }
 
 .contact-icon {
@@ -550,9 +573,9 @@ section .flex-container p {
   border-radius: 4px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 1px 4px rgba(0, 0, 0, 0.4),
     inset 0 -1px 0 rgba(0, 0, 0, 0.2);
-  color: transparent;
+  color: black;
   display: inline-block;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
   letter-spacing: 0.5px;
   margin: 0;
@@ -1042,6 +1065,12 @@ footer a:hover {
     font-size: 30px;
   }
 
+  .contact-card {
+    font-size: 26px;
+    margin: 0 10px;
+    padding: 3rem;
+  }
+
   footer {
     padding: 0 25px;
     padding-top: 40px;
@@ -1080,6 +1109,15 @@ footer a:hover {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 1.5rem 1rem;
+    perspective: 600px; /* remove this line to remove effect */
+  }
+
+  .projects-grid:has(.featured-project:hover) .featured-project:not(:hover) {
+    transform: rotateY(6deg) rotateX(2deg) scale(0.97);
+  }
+
+  .featured-project:hover {
+    transform: scale(1.01) translateY(-5px);
   }
 
   .featured-project {
