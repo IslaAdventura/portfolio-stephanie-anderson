@@ -118,6 +118,23 @@
   font-size: 1.5rem;
 }
 
+.project-construction {
+  color: red !important;
+  text-shadow: 0 0 20px black, 0 0 30px black, 0 0 40px black;
+  letter-spacing: 2px;
+  animation: flicker 4s infinite alternate;
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red;
+  }
+  50% {
+    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black, 0 0 20px black;
+  }
+}
+
 .project-card-description {
   color: #666;
   line-height: 1.6;
@@ -198,7 +215,7 @@
 /* Featured Project Spotlight */
 .featured-project {
   grid-column: 1 / -1;
-  background: linear-gradient(135deg, #2c3e50, #34495e);
+  background: #404040;
   color: white;
   padding: 3rem;
   border-radius: 25px;
