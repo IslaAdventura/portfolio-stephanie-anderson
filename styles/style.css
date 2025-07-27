@@ -8,8 +8,6 @@
   --default-font-family: "Smythe", system-ui;
 }
 
-/*CARD GRID CSS*/
-
 /* Projects Container */
 .projects-grid {
   display: grid;
@@ -18,7 +16,7 @@
   padding: 3rem 2rem;
   max-width: 1400px;
   margin: 0 auto;
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  background: #dae1e7;
   min-height: 100vh;
   perspective: 1200px;
 }
