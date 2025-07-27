@@ -283,7 +283,7 @@
 
 .featured-project .project-btn-primary:hover {
   background: linear-gradient(135deg, #a3b1d5, #8697c2);
-  box-shadow: 0 8px 25px #2a56c6;
+  box-shadow: 0 4px 8px #2a56c6;
   color: black;
 }
 
